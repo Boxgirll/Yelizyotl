@@ -1,0 +1,122 @@
+body{
+    padding: 0;
+    margin: 0;  
+}
+
+:root{
+    background-color:#d9e3e4;
+
+}
+
+h1{
+    margin-left: 40px;
+    margin-right: 40%;
+    font-size: 45px;    
+    text-align: center;
+    font-family: Trebuchet MS;
+    color: rgb(69, 123, 91);   
+}
+
+h4{
+    font-family: Trebuchet MS; 
+    text-align: center;
+    font-size: 15px;  
+}
+
+#uno{
+
+    color:#4a8994;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+
+}
+
+#dos{
+    color:#4a8994;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    text-align: center;
+    margin-top: 27%;
+    font-size: 25px;
+ 
+}
+
+.position{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+
+.slider{
+    margin-top: 25spx;
+    background-image: url(Prod1.jpeg);
+
+    background-size: cover;
+    height: 45%;
+    width: 40%;
+    border-radius: 10px;
+    animation: animate 17s infinite;
+}
+
+@keyframes animate{
+    20%{
+        background-image: url(Prod5.jpeg);
+        background-size: cover;
+    }
+    40%{
+        background-image: url(Prod4.jpeg);
+        background-size: cover;
+    }
+    60%{
+        background-image: url(Prod3.jpeg);
+        background-size: cover;
+    }
+    80%{
+        background-image: url(Prod2.jpeg);
+        background-size: cover;
+    }100%{
+        background-image: url(Prod1.jpeg);
+        background-size: cover;
+    }
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-top: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+    margin-top: -90px;
+    background-color:  rgb(255, 255, 255);
+}
+
+ul li{
+    display: inline-block;
+    padding: 0px, 20px;
+}
+
+ul{
+    margin-left: 10%;
+    display: grid;
+    flex: 1;
+    align-self: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+a{
+    color:rgb(69, 123, 91);
+    text-decoration: none;
+    font-family:Trebuchet MS ;
+    font-size: 20px;
+
+}
+
+a:hover{
+    color: rgb(105, 150, 123);
+}
